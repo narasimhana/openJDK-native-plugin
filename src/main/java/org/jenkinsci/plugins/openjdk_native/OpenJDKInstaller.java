@@ -1,16 +1,4 @@
 package org.jenkinsci.plugins.openjdk_native;
-
-import hudson.Extension;
-import hudson.FilePath;
-import hudson.Launcher;
-import hudson.model.TaskListener;
-import hudson.model.JDK;
-import hudson.model.Node;
-import hudson.tools.ToolInstaller;
-import hudson.tools.ToolInstallerDescriptor;
-import hudson.tools.ToolInstallation;
-import hudson.util.ListBoxModel;
-
 import java.io.IOException;
 import java.io.PrintStream;
 import java.nio.charset.Charset;
@@ -148,9 +136,6 @@ public class OpenJDKInstaller extends ToolInstaller{
     
     public enum OpenJDKPackage {
         openJDK8("openJDK8","java-1.8.0-openjdk"),
-        openJDK7("openJDK7","java-1.7.0-openjdk"),
-        openJDK6("openJDK6","java-1.6.0-openjdk");
-        
         private final String name;
         private final String packageName;
         
